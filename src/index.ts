@@ -1,3 +1,5 @@
-import { HelloElement } from './hello.element';
+import * as angular from 'angular';
+import { helloModule } from './hello/hello.module';
 
-customElements.define('wt-hello', HelloElement);
+
+angular.bootstrap(document.body, [helloModule.name]);
