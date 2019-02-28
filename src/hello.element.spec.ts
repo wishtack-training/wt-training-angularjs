@@ -4,7 +4,7 @@ describe('HelloElement', () => {
 
     beforeEach(() => {
         customElements.define('wt-hello', HelloElement);
-    })
+    });
 
     it('should be polite', () => {
         const hello = new HelloElement();
